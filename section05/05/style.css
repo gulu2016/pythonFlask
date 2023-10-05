@@ -1,0 +1,7 @@
+/*s5-5-1-1 assign a font to the body content, if the front one is
+    not avaliable, use the next one
+*/
+body {
+    font-family: -app-system,BlinkMacSystemFont,"Segoe UI",Ubuntu;
+    color: red;
+}
