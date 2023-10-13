@@ -1,7 +1,30 @@
 /*s5-5-1-1 assign a font to the body content, if the front one is
     not avaliable, use the next one
 */
+
+/*s5-10-1-1  some css config, don't know what below content is for.
+*/
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+main {
+    max-width: 35rem;
+    margin: 3.75 auto 0 auto;
+}
+
+h1 {
+    margin-bottom: 2.5rem;
+}
+
 body {
+    box-sizing: border-box;
     font-family: -app-system,BlinkMacSystemFont,"Segoe UI",Ubuntu;
     color: red;
+}
+
+img {
+    max-width: 100%;
 }
