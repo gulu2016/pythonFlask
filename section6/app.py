@@ -7,6 +7,7 @@ def create_app():
     client = MongoClient("mongodb+srv://<user>:<password>@<mongodb-server>/microblog")
     app.db = client.microblog
 
+
     @app.route("/", methods=["GET", "POST"])
     def home():
         if request.method == "POST":
