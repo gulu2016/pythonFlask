@@ -9,11 +9,16 @@
 </head>
 <body>
   <!--s6-9-1-2 add header,main,footer in body  -->
+  <!--s6-12-1-4 pay attention to the class name of "navbar","navbar__brand","navbar__navigation","navbar__navigation-item" -->
   <header class="navbar">
+    <!--s6-12-1-1 add div block to contain image-->
     <div class="navbar__brand">
+      <!--s6-11-1-1 add image in the html, alt is the shown text when the image is not avaliable -->
       <img class="navbar__logo" src="/static/logo.svg" alt="The Microblog logo" />Microblog
     </div>
+    <!--s6-12-1-2 add no order list to contain many links-->
     <ul class="navbar__navigation">
+      <!--s6-12-1-3 add two links -->
       <li class="navbar__navigation-item">
         <a href="#" class="navbar__link">Recent</a>
       </li>
@@ -27,11 +32,17 @@
     <section>
       <!--s6-9-1-4 add h1 in section-->
       <h1>Add new entry</h1>
+      <!--s6-13-1-1 add form-->
+      <!--s6-13-1-2 POST method will send data in request header,not in URL-->
       <form class="form" method="POST">
+        <!--s6-13-1-6 these sub elements like p and button, like the property of form object -->
         <p class="form__input">
+          <!--s6-13-1-3 add label for what id="entry" -->
           <label for="entry" class="form__label">Entry contents:</label>
+          <!--s6-13-1-4 add input area in the form -->
           <textarea name="content" id="entry" class="form__textarea"></textarea>
         </p>
+        <!--s6-13-1-5 add submit button for form -->
         <button type="submit" class="form__submit">Add entry</button>
       </form>
     </section>
